@@ -10,18 +10,26 @@ This repository provides a complete implementation of a stereo depth measurement
 
 ## File Structure
 ```
-├── resources
-│   └── OrangePi_5_Pro_RK3588S_用户手册_v1.1-1.pdf  # Hardware manual
-├── source_code
-│   ├── static
-│   │   ├── model
-│   │   │   ├── yolov8m.rknn
-│   │   │   ├── yolov10s.rknn
-│   ├── detection.py         # YOLO model inference & drawing utility
-│   ├── parameters.json      # Stereo camera and its calibration parameters
-│   ├── processor.py         # Pre- and post-processing utilities for YOLO
-│   ├── sgbm.py              # Stereo depth calculation logic
-│   ├── stream.py            # Main Flask application
+object_recognizing_and_ranging/
+├── resources/
+│   ├── additional_resources.txt
+│   └── requirement.txt
+├── source_code/
+│   ├── static/
+│   │   ├── data/
+│   │   │   ├── left/
+│   │   │   └── right/
+│   │   └── model/
+│   │       ├── yolov8m.rknn
+│   │       └── yolov10s.rknn
+│   ├── utilities/
+│   │   ├── calibration.py
+│   │   └── save_image.py
+│   ├── detection.py
+│   ├── parameters.json
+│   ├── processor.py
+│   ├── sgbm.py
+│   └── stream.py
 ```
 ## Deployment
 ### 1. Install Dependencies:
@@ -60,10 +68,19 @@ Update ./source_code/parameters.json with your camera's calibration parameters. 
 ### 3. Run __./source_code/stream.py
 
 ## References
-笨小蛙. (2024). YOLOv8目标检测部署RK3588全过程，附代码pt-＞onnx-＞rknn，附【详细代码】. Csdn.net. https://blog.csdn.net/GREEN_cq/article/details/141607095
-基于python的双目标定_python双目标定-CSDN博客. (2023). Csdn.net. https://blog.csdn.net/weixin_43788282/article/details/131166699
-King, L. (2023). YOLOv5-6.1从训练到部署（三）：模型在CPU上部署_yolo模型部署-CSDN博客. Csdn.net. https://blog.csdn.net/TANTANWANG/article/details/134959739
-落叶_随峰. (2022). https://www.bilibili.com/video/BV1GP41157Ti/. In Bilibili.com. https://doi.org/10754352/810754352-1-30032.m4s
+
+- [RKNN Platform and Toolkit Documentation](https://github.com/airockchip/rknn-toolkit2/tree/master/doc)
+
+- 笨小蛙. (2024). YOLOv8目标检测部署RK3588全过程，附代码pt-＞onnx-＞rknn，附【详细代码】. Csdn.net. https://blog.csdn.net/GREEN_cq/article/details/141607095  
+
+- 基于python的双目标定_python双目标定-CSDN博客. (2023). Csdn.net. https://blog.csdn.net/weixin_43788282/article/details/131166699  
+
+- King, L. (2023). YOLOv5-6.1从训练到部署（三）：模型在CPU上部署_yolo模型部署-CSDN博客. Csdn.net. https://blog.csdn.net/TANTANWANG/article/details/134959739  
+
+- 落叶_随峰. (2022). https://www.bilibili.com/video/BV1GP41157Ti/. In Bilibili.com. https://doi.org/10754352/810754352-1-30032.m4s  
+
+- Orange Pi - Orangepi. (2025). Orangepi.org. http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Pro.html
+
 
      
       
