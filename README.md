@@ -45,7 +45,7 @@ Update ./source_code/parameters.json with your camera's calibration parameters. 
      |──left
      |──right
 ```
-  5. Run __./source_code/utilities/save_image.py__. to take pictures of the chessboard with the camera. Make sure the chessboard completely presents in every photo taken and make chessboard's angle as diverse as possible.  
+  5. Run [./source_code/utilities/save_image.py](./source_code/utilities/save_image.py). to take pictures of the chessboard with the camera. Make sure the chessboard completely presents in every photo taken and make chessboard's angle as diverse as possible.  
   6. Calibration:
      1. MatLab:
         1. Import image directory into MatLab --> Apps --> Stereo Camera Calibration --> Add Images. Fill in chessboard size.
@@ -63,9 +63,9 @@ Update ./source_code/parameters.json with your camera's calibration parameters. 
            "translation_matrix" = stereoParams/Posecamera2/Translation (1*3 matriox)
            ```
      2. OpenCV:
-        Run __./source_code/utilities/clibration.py__. The result will be automatically saved as a json file.
+        Run [./source_code/utilities/clibration.py](./source_code/utilities/clibration.py). The result will be automatically saved as a json file.
 
-### 3. Run __./source_code/stream.py
+### 3. Run [./source_code/stream.py](./source_code/stream.py)
 
 ## References
 
