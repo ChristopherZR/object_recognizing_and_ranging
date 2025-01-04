@@ -1,0 +1,2 @@
+orangepi handbook: http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Pro.html
+rknn documentation & handbook: https://github.com/airockchip/rknn-toolkit2/tree/master/doc
