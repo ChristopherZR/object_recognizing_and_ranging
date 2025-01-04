@@ -81,6 +81,19 @@ Update ./source_code/parameters.json with your camera's calibration parameters. 
 
 - Orange Pi - Orangepi. (2025). Orangepi.org. http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-Pi-5-Pro.html
 
+## License
+
+This project is licensed under the terms of the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).  
+See the [LICENSE](./LICENSE) file for details.
+
+### Key Points:
+- You are free to use, modify, and distribute this software, but **any modifications or derived works must also be licensed under GPL-3.0**.
+- If you distribute this software (modified or unmodified), you **must include the source code** or provide a written offer to supply the source code.
+- This software is provided "as is," without warranty of any kind, express or implied.
+
+For more information, visit the [GNU GPL-3.0 official website](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+
 
      
       
